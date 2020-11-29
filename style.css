@@ -122,8 +122,9 @@ footer{
     background: #1d3557;
 }
 
-
-
+.bottun{
+    float: right;
+}
 
 /*------------------------Darkmode button------------------*/
 * {
