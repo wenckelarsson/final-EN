@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAFETY DRIVE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<!--=================body========================-->
+<body>
+  <header>
+      <img src="image/logo3.png" class="logo" alt="logo">
+
+      <div class="bg-div sticky">
+          <a href="index.html">
+              <img id="deuter" class="logo-img" src="image/logoo.png" alt="logo"  ALT="align box" ALIGN=CENTER>
+          </a>
+          <nav id="dark1">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Problemstilling.html">ISSUE</a></li>
+                <li><a href="Løsning.html">SOLUTION</a></li>
+                <li><a href="Funksjon.html">FUNCTION</a></li>
+                <li><a href="OmOss.html">ABOUT</a></li>
+              </ul>
+            </nav>
+        </div>
+  </header>
+<!--=================mainconten==================--->
+<div class="mainContainer" id="dark">
+    <div>
+        <section>
+            <div id="deu2" class="bottun">
+                <a href="Problemstilling.htmll"> <img alt="EN.logo"  src="image/English%20flag%20button.png" height="35" width="35"></a>
+                <a href="https://ciwankurd.github.io/Final-projekt-No/Problemstilling.html"><img alt="No.logo" src="image/Norsk%20flag%20button.png"  height="35" width="30" alt="Norwegian language"></a>
+                <strong>
+                    <br>
+                    En / No</strong>
+            </div>
+            <div>
+               <input type="checkbox" class="checkbox" id="chk" onclick="colorModeSwitch()"/>
+                <label class="switch" for="chk">
+                    <div class="circle"></div>
+                </label>
+               </div>
+            <article>
+                <header>
+                    <p class="fontStyle">ISSUE</p>
+                </header>
+
+                <p class="textStyle">
+                    Many traffic accidents happen in the world every day. There are many reasons behind
+                    these traffic accidents such as lack of attention,
+                    falling asleep, sudden heart attacks, or driving under the influence.
+                    <br>
+                    <br>
+                    This means that we need to invest the artificial intelligence to help reduce
+                    traffic accidents in the world and secure drivers while driving.
+                    <br>
+                    <br>
+                    The situation is more dangerous when a traffic accident occurs in areas far from traffic,
+                    so death may occur for trivial reasons such as that the driver needed first aid.
+                    <br>
+                    <br>
+                    Safety Drive is the car's indispensable safety system, as the system contributes to saving lives
+                    when the car is exposed to violent accidents, and its importance lies in protecting the driver from
+                    his physical symptoms, the most important of which are heart rotation and heartbeat,
+                    and the driver's protection from car accidents.
+                    <br>
+                    <br>
+                </p>
+                <img src="image/problem.png" alt="problemstilling" width="70%"> <br><br>
+            </article>
+        </section>
+    </div>
+</div>
+
+<!------------------footer-------------------->
+  <footer id="dark3">
+      <p>SAFTEY DRIVE | NEW INNOVATION WAY | OSLOMETStudenter | <a style="color: greenyellow" href=image/final.pdf>Kilder</a></p>
+      <article style="text-align: center">
+          <a href="OmOss.html" style="color:greenyellow"> <p >Contact</p></a>
+      </article>
+  </footer>
+  <!--=================Script========================-->
+  <script>
+    function colorModeSwitch () {
+      const mode = localStorage['colorMode']
+      document.body.classList.toggle('dark-mode', mode)
+    }
+
+    const checkbox         = document.querySelector('#chk')
+          checkbox.checked = localStorage['colorMode']
+
+    checkbox.addEventListener('change', () => {
+      localStorage['colorMode'] = checkbox.checked || ""
+      colorModeSwitch()
+    })
+
+    colorModeSwitch()
+  </script>
+
+</body>
+</html>
